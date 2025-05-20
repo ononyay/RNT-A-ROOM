@@ -1,0 +1,361 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  height: 14%;
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 6%;
+  background-color: #e7b93b;
+}
+
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
+.nav-links li{
+  font-size: 30px;
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+  
+}
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover{
+  background-color: #fff;
+  color: #e7b93b;
+}
+/*--------------NURSE LOGIN BUTTON FROM DEVIN :) ---------*/
+
+.login-btn{
+	cursor: pointer;
+  background: #e7b93b;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  width: 10%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-btn:hover{
+  background-color: #fff;
+  color: #e7b93b;
+}
+
+
+.left{
+	flex:1;
+	display:flex;
+	flex-direction:column;
+	order:1;
+}
+
+.container{
+    padding: 0 7%;
+}
+
+.exit-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.myPopup{ 
+    position: absolute;
+    transform: translate(55%, 20%);
+    z-index: 9999;
+    background: #e7b93b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    width:50%;
+    height:50%;
+    text-align: center;
+}
+
+.myPopup.exit {
+    animation: fadeOut 1s;
+}
+
+.myPopup.show{
+    display: block;
+    animation: fadeIn 1s;
+}
+
+.myPopup h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.myPopup-Form{
+    margin-bottom: 20px;
+}
+
+.myPopup-Form label {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.myPopup-Form input {
+    margin-bottom: 5px;
+    width: 50%;
+    height: 10%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.sign-in-btn {
+    font-size: 18px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: 50%;
+    margin: 1% auto;
+    background-color: #e7b93b;
+}
+
+.sign-in-btn:hover {
+    background-color: #fff;
+    color: #e7b93b;
+    font-weight: bold;
+
+  }
+  #nurse-register{
+    border: none;
+    background-color: #eb3d60;
+  }
+  #nurse-register:hover {
+    background-color: #fff;
+    color: #eb3d60;
+    font-weight: bold;
+  }
+ 
+/*-------BELOW THE HEADER -------*/
+.sign-up-title{
+  color: black;
+  font-size: 80px;
+  margin: 10px 10px 8%;
+}
+.container{  
+  margin: auto;
+  padding-top: 7%;
+  padding-bottom: 10%;
+  background-image: linear-gradient(rgba(0,0,0,0.3 ),rgba(0, 0, 0, 0.3)),url(../images/backgroundPhotos/littlegirldancing.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.register-form{
+  background-color: #ffffffca;
+  margin: auto;
+  width: 50%;
+  border: 3px solid #e7b93b;
+  height: auto;
+  text-align: center;
+  padding: 2%;
+  border-radius: 8%;
+}
+
+input{
+  font-size: 20px;
+  margin: 10px;
+  height: 5%;
+  width: 60%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.container p{
+  margin: 1px 5px 15px;
+  color: grey;
+}
+
+.password-input{
+  margin-bottom: 5%;
+}
+
+fieldset {
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  min-width: 0;
+  background-color: transparent;
+}
+fieldset legend {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  width: 100%;
+  float: left;
+  display: table;
+  font-size: 1.5rem;
+  line-height: 140%;
+  font-weight: 600;
+  color: #333;
+}
+fieldset legend + * {
+  clear: both;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
+/* TOGGLE STYLING */
+.toggle {
+  margin: 0 0 1.5rem;
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.toggle input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+.toggle input + label {
+  margin: 0;
+  padding: 0.75rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: solid 1px #DDD;
+  background-color: #FFF;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  transition: border-color 0.15s ease-out, color 0.25s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  /* ADD THESE PROPERTIES TO SWITCH FROM AUTO WIDTH TO FULL WIDTH */
+  /*flex: 0 0 50%; display: flex; justify-content: center; align-items: center;*/
+  /* ----- */
+}
+.toggle input + label:first-of-type {
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
+.toggle input + label:last-of-type {
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
+.toggle input:hover + label {
+  border-color: #c8942e;
+}
+.toggle input:checked + label {
+  background-color: #c8942e;
+  color: #FFF;
+  box-shadow: 0 0 10px rgba(102, 179, 251, 0.5);
+  border-color: #c8942e;
+  z-index: 1;
+}
+
+
+@media (max-width: 800px) {
+  .toggle input + label {
+    padding: 0.75rem 0.25rem;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* STYLING FOR THE STATUS HELPER TEXT FOR THE DEMO */
+.status {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.status span {
+  font-weight: 600;
+  color: #B6985A;
+}
+.status span:first-of-type {
+  display: inline;
+}
+.status span:last-of-type {
+  display: none;
+}
+@media (max-width: 800px) {
+  .status span:first-of-type {
+    display: none;
+  }
+  .status span:last-of-type {
+    display: inline;
+  }
+}
+
+.submit-btn{
+    cursor: pointer;
+      background: #e7b93b;
+      color: #fff;
+      padding: 10px 40px;
+      border-radius: 20px;
+      text-decoration: none;
+      width: 50%;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 2%;
+}
+
+
+
+
+/*-------animations -------*/
+@keyframes fadeIn {
+  from {
+	  opacity: 0;
+	  height:1px;
+	  width:1px;
+	  }
+  to {
+	  opacity:1;
+	  }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+        }
+    to {
+        opacity: 0;
+        visibility: hidden; 
+        }
+  }

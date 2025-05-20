@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3 ),rgba(0,0,0,0.3 )),url(../assets/cooking-home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6%;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    font-size: 30px;
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/*--------------NURSE LOGIN BUTTON FROM DEVIN :) ---------*/
+
+.login-btn{
+	cursor: pointer;
+    background: #e7b93b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 10%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.loginName{
+    font-size:0.9em;
+}
+
+.left{
+	flex:1;
+	display:flex;
+	flex-direction:column;
+	order:1;
+}
+
+.container{
+    padding: 0 7%;
+}
+
+.exit-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.myPopup{ 
+    position: absolute;
+    transform: translate(55%, 20%);
+    z-index: 9999;
+    background: #e7b93b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    width:50%;
+    height:50%;
+    text-align: center;
+}
+
+.myPopup.exit {
+    animation: fadeOut 1s;
+}
+
+.myPopup.show{
+    display: block;
+	animation: fadeIn 1s;
+}
+
+.myPopup h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.myPopup-Form{
+    margin-bottom: 1%;
+    height: 70%;
+}
+
+.myPopup-Form label {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.myPopup-Form input {
+    margin-bottom: 1%;
+    width: 50%;
+    height: 15%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.sign-in-btn {
+    font-size: 18px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: 50%;
+    margin: 1% auto;
+    background-color: #e7b93b;
+    text-align: center;
+    padding: 12px;
+}
+
+.sign-in-btn:hover {
+    background-color: #fff;
+    color: #e7b93b;
+    font-weight: bold;
+}
+#nurse-register{
+  border: none;
+  background-color: #eb3d60;
+  padding: 15px;
+}
+#nurse-register:hover {
+  background-color: #fff;
+  color: #eb3d60;
+  font-weight: bold;
+}
+/*---------------DROPDOWN USER IS SIGNED IN----------*/
+.profile-dropdown {
+    position: relative;
+  
+  }
+  .profile-btn:hover {
+    background-color: #fff;
+    color: #e7b93b;
+  }
+  .menu-dropdown {
+    justify-content: center;
+    text-align: center;
+    line-height: 100px;
+    width: 150px;
+    position: absolute;
+    color: #fff;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+    top: 100%;
+  }
+  .menu-dropdown:hover {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .profile-dropdown:hover .menu-dropdown {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  .profile-dropdown.active .menu-dropdown {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  .menu-dropdown-content {
+    display: block; /* Change from flex to block */
+    color: #fff;
+  }
+  .menu-dropdown-content a {
+    display: block; /* Each link occupies full width */
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    text-decoration: none;
+    background-color: #ffffffd3;
+    color: black;
+    margin: 5%;
+    height: auto;
+    width: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: font-size 0.3s ease;
+  }
+
+  
+  .menu-dropdown-content a:hover {
+    font-size: 25px; /* Increase font size on hover */
+    font-weight: bold;
+    color: #e7b93b;
+  }
+  
+  .profile-btn {
+    font-size: 20px;
+    border: 1px solid #fff;
+    background-color: #e7b93b;
+    color: #fff;
+    padding: 10px 20px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+
+
+/*---------------PHOTO CONTENT----------*/
+
+
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color:#fff;
+    text-align: left;
+    padding-top: 22%;
+}
+.search-bar{
+    background: #fff;
+    width: 60%;
+    margin: 30px 0 30px 2px; 
+    padding: 6px 10px 6px 20px;
+    border-radius: 35px;
+}
+
+
+.search-bar form{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    text-align: left;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+
+}
+.search-input{
+    flex: 1;
+}
+
+.drop{
+    display: block;
+    width: 60%;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+    text-align: left;
+    color: #777;
+    border: none;
+}
+
+.content-dropdown{
+    flex: 1;
+}
+
+.content-dropdown.active > .drop + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.content-dropdown.active > .drop,
+.drop:hover{
+    color: #000;
+}
+
+.dropdown-menu{
+    line-height: 40px;
+    width: 15%;
+    position: absolute;
+    background-color: #e7b93bc6;
+    color: #fff;
+    padding: 6px 10px 6px 30px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3 );
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+}
+
+.dropdown-menu-selection{
+     display: flex;
+     flex-direction: column;
+     gap: .25rem;
+     color: #fff;
+}
+.dropdown-menu-selection a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub-btn{
+    background: #e7b93b;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar form button img{
+    width: 15px;
+    margin-top: 4%;
+}
+
+.search-bar form label{
+    font-weight: 600;
+}
+
+/*---------BELOW THE LARGE PHOTO CONTENT STUFF-------*/
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500; 
+    color: #333;
+}
+
+.content-type{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.content-type div img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+.content-type div{
+    position: relative;
+}
+.content-type div span{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+/*---------TYPES OF RENTALS STYLES ----------*/
+.type-rentals{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.type-rentals div img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.type-rentals h3{
+    font-weight: 600;
+    margin-top: 10px;
+}
+/*-----------POSTING LISTING LEARN MORE ----------*/
+.prop-owner-contact{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(../images/homepageImages/others/hospitalBuilding.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+.prop-owner-contact h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+.prop-owner-contact p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.learn-btn{
+    background: #e7b93b;
+    color:#fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/*-------animations -------*/
+@keyframes fadeIn {
+  from {
+	  opacity: 0;
+	  height:1px;
+	  width:1px;
+	  }
+  to {
+	  opacity:1;
+	  }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+        }
+    to {
+        opacity: 0;
+        visibility: hidden; 
+        }
+  }
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .header {
+      height: 50%;
+    }
+
+    .nav-links li {
+      font-size: 20px;
+      margin: 10px 15px;
+    }
+    .login-btn {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+
+    .content-type img{
+        height: 50%;
+    }
+
+    .type-rentals img{
+        height: 20%;
+    }
+
+    .left h1 {
+      font-size: 24px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+    }
+  }
+  
